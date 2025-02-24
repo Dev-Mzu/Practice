@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        nav ul{
+            display: flex;/*makes the navigation and it's children flexbox*/
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;/*removes bullets*/
+            background-color: black;
+            padding: 10px 20px;
+        }
+
+        /*style for the 1st child*/
+        nav ul li:first-child{
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin-right: auto;
+        }
+
+        nav ul li{
+            margin-left: 20px;/*adds space between links*/
+        }
+
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        mark{
+            background-color:black;
+            color: white;
+        }
+        .about{
+            text-align: center;
+        }
+        #mes{
+            width: 600px;
+            height: 400px;
+        }
+       .about-sec{
+            text-align: center;
+       }
+       .service{
+            text-align: center;
+            align-self: center;
+            align-content: center;
+       }
+       .services{
+        text-align: center;
+       }
+       img{
+        width: 600px;
+        height: 400px;
+       }
+       .foot{
+        text-align: center;
+       }
+       footer{
+        background-color: black;
+        color: white;
+       }
+    </style>
+</head>
+<body>
+   <header>
+        <nav>
+            <ul>
+                <li><mark>Welcome to Software Design</mark></li>
+                <li><a href="#">About Us</a></li><!--use hyperlinks because they are clickable-->
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+   </header>
+   <article class = "about-sec">
+    <h2 class = "about">About Us</h2>
+    <img id = "mes" src ="MessiWC.jpg" alt = "Lionel Messi kissing FIFA World Cup Trophy">
+   </article>
+
+   <article class = "services">
+        <h2 class = "serivce">Our Services</h2>
+        <img id = "copa" src = "images.jpg" alt = "Messi with Copa America trophy">
+        <img id = "finali" src = "finalissima.jpg" alt = "Messi with Finnalissima trophy">
+   </article>
+
+   <footer>
+        <h2 class="foot">&copy 2025 The Lucky Company. All rights reserved.</h2>
+   </footer>
+</body>
+</html>
